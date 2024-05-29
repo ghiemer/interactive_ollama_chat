@@ -8,7 +8,7 @@ Dieses Projekt ermöglicht interaktive Unterhaltungen mit einem KI-Modell. Es un
 
 1. **Klonen Sie das Repository:**
    ```sh
-   git clone https://github.com/your-repo/interactive-chat.git
+   git clone https://github.com/ghiemer/interactive_ollama_chat.git
    cd interactive-chat
    ```
 
