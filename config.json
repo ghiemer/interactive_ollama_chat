@@ -1,5 +1,4 @@
 {
-    "url": "http://your_api_endpoint",
     "model": "llama3",
     "stream": false,
     "markdown": true

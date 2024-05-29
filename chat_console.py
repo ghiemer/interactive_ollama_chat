@@ -1,5 +1,7 @@
 import json
+import os
 from chat_session import ChatSession
+from dotenv import load_dotenv
 
 def load_config(filepath):
     with open(filepath, 'r') as f:
@@ -54,9 +56,13 @@ def print_colored(text, color):
     return f"{colors[color]}{text}{colors['reset']}"
 
 def main():
+    # Laden der Umgebungsvariablen aus der .env-Datei
+    load_dotenv()
+    server_url = os.getenv("SERVER_URL")
+    
     config = load_config('config.json')
     options = load_options('options.json')
-    chat = ChatSession(url=config['url'], model=config['model'], stream=config.get('stream', False), markdown=config.get('markdown', True), options=options)
+    chat = ChatSession(url=server_url, model=config['model'], stream=config.get('stream', False), markdown=config.get('markdown', True), options=options)
 
     print("Willkommen im interaktiven Chat. Geben Sie Ihre Nachrichten ein.")
     print("Verwenden Sie /quit zum Beenden, /export 'name' zum Exportieren, /load 'pfad_zur_datei' zum Laden, /options zum Ändern der Optionen, /settings zum Ändern der Einstellungen während der Sitzung und /markdown true|false zum Umschalten von Markdown.")
