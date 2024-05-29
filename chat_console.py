@@ -100,7 +100,7 @@ def main():
                 print("Ungültiger Befehl. Verwenden Sie true oder false.")
         else:
             response = chat.send_message(user_input)
-            print(print_colored("Bot: " + response, "yellow"))
+            print(print_colored("Bot: ", "yellow") + response )
 
 if __name__ == "__main__":
     main()
