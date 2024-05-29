@@ -1,5 +1,3 @@
-### README
-
 # Interaktiver Chat mit KI-Modell
 
 Dieses Projekt ermöglicht interaktive Unterhaltungen mit einem KI-Modell. Es unterstützt das Laden und Speichern von Konversationen sowie das Anpassen von Modelloptionen.
@@ -8,13 +6,19 @@ Dieses Projekt ermöglicht interaktive Unterhaltungen mit einem KI-Modell. Es un
 
 1. **Klonen Sie das Repository:**
    ```sh
-   git clone https://github.com/ghiemer/interactive_ollama_chat.git
+   git clone https://github.com/your-repo/interactive-chat.git
    cd interactive-chat
    ```
 
 2. **Installieren Sie die erforderlichen Pakete:**
    ```sh
    pip install -r requirements.txt
+   ```
+
+3. **Erstellen Sie eine `.env`-Datei im Projektverzeichnis:**
+   ```plaintext
+   # .env
+   SERVER_URL=http://your_api_endpoint
    ```
 
 ## Konfigurationsdateien
@@ -25,7 +29,6 @@ Diese Datei enthält die grundlegenden Einstellungen wie die URL des Endpunkts u
 
 ```json
 {
-    "url": "http://your_api_endpoint",
     "model": "llama3",
     "stream": false,
     "markdown": true
@@ -93,6 +96,7 @@ Bot: Hallo! Wie kann ich Ihnen heute helfen?
 
 - **Du:** Eingaben des Benutzers werden grün dargestellt.
 - **Bot:** Antworten des Bots werden gelb dargestellt.
+- **Settings:** Das Menü zur Anpassung der Optionen wird in Gelb dargestellt.
 
 ## Anpassung der Optionen
 
@@ -120,6 +124,4 @@ Hier sind die verfügbaren Optionen mit ihren Standardwerten:
 
 ## Lizenz
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der LICENSE-Datei.
-
----
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der LICENSE
