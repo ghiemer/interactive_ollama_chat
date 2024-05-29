@@ -1,0 +1,6 @@
+{
+    "num_predict": 800,
+    "top_k": 20,
+    "top_p": 0.9,
+    "temperature": 0.8
+}
