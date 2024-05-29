@@ -1,5 +1,5 @@
 {
-    "url": "http://100.109.205.81:11434/api/generate",
+    "url": "http://your_api_endpoint",
     "model": "llama3",
     "stream": false,
     "markdown": true
